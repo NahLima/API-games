@@ -25,7 +25,7 @@ router.put("/jogos/:id",cors(),controller.putChangeName)
 @acces Public
 @endpoint http://localhost:porta/jogos
 */
-//router.patch("/jogos/:id,"cors(),controller.AltNamePatch)
+router.patch("/jogos/:id",cors(),controller.patchNameChange)
 
 
 module.exports = router
