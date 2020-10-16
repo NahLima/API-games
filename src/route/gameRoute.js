@@ -13,7 +13,7 @@ router.get("/jogos",cors(),controller.getAllGames)
 
 /*
 @route PUT games
-@desc altera o dado name
+@desc altera o dado name e company
 @acces Public
 @endpoint http://localhost:porta/jogos
 */
@@ -21,7 +21,7 @@ router.put("/jogos/:id",cors(),controller.putChangeName)
 
 /*
 @route PATCH games
-@desc altera o dado name 
+@desc altera o dado name e company
 @acces Public
 @endpoint http://localhost:porta/jogos
 */
@@ -29,3 +29,4 @@ router.patch("/jogos/:id",cors(),controller.patchNameChange)
 
 
 module.exports = router
+
