@@ -1,18 +1,19 @@
 # API-games
 Usando Put e Pacth !
 
-### Recurso 1
+| Recurso 1 | Descrição |
+| --- | --- |
+| `/jogos` | A partir de um parâmetro para escolher um determinado jogo, vamos alterar o dado de name, usando o verbo PUT|
 
-Jogos	A partir de um parâmetro para escolher um determinado jogo, vamos alterar o dado de name, usando o verbo _PUT_
+| Recurso 2 | Descrição |
+| --- | --- |
+| `/jogos` |  A partir de um parâmetro para escolher um determinado jogo, vamos alterar o dado de name, usando o verbo PATCH|
 
-### Recurso	2
+| Recurso  3 | Descrição |
+| --- | --- |
+| `/jogos` | A partir do parâmetro ID para escolher um determinado jogo, vamos alterar o dado de company desse jogo usando o PUT|
 
-Jogos	A partir de um parâmetro para escolher um determinado jogo, vamos alterar o dado de name, usando o verbo _PATCH_
+| Recurso 4 | Descrição |
+| --- | --- |
+| `/jogos` | A partir de um parâmetro para escolher um determinado jogo, usando o PATCH vamos alterar o dado de company desse jogo
 
-### Recurso 3
-
-Jogos	A partir do parâmetro ID para escolher um determinado jogo, vamos alterar o dado de company desse jogo usando o _PUT_
-
-### Recurso	4
-
-Jogos	A partir de um parâmetro para escolher um determinado jogo, usando o _PATCH_ vamos alterar o dado de company desse jogo

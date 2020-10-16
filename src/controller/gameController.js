@@ -6,7 +6,7 @@ const getAllGames = (request, response) =>{
     response.status(200).send(games)
 }
 
-//put
+//put --> tem que enviar o body completo no postman se não ele apaga tudo e altera o que vc modificou
 const putChangeName =  (request , response) => {
     const changeNameGame = request.body
     const id = parseInt(request.params.id) // poderia ser tbm  request.params.id apenas
@@ -23,15 +23,17 @@ const putChangeName =  (request , response) => {
         console.log(games)
 }
 
-//patch
+//patch --> vc coloca no body apenas o que vc vai mudar
 const patchNameChange = (request,response) => {
     const gameUp = request.body
     const id = parseInt(request.params.id)
     const gameChange = games.find(game=>game.id == id)
 
-    Object.keys(gameUp).forEach((keys)=>{ // retorna um array cujo os  elementos são strings correspondentes para a propriedade enumerável encontrada diretamento sobre o objeto
-        gameChange[keys]=gameUp[keys]
+    Object.keys(gameUp).forEach((key)=>{  // retorna um array cujo os  elementos são strings correspondentes para a propriedade enumerável encontrada diretamento sobre o objeto
+        gameChange[key]=gameUp[key]
     })
+
+    response.status(200).send(games)
 }
 
 
